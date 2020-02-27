@@ -12,13 +12,10 @@ Example: `$ tldr tar` will give you examples of the **tar** command.
 6. **tree** will list files and folders in a tree shape graph.
 
 # Exercise
-1.
-```bash
-$ ls -alh --sort=time --color=always
-```
+1. `$ ls -alh --sort=time --color=always`
 2. 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 saved=""
 marco () {
     saved="$(pwd)"
@@ -28,3 +25,21 @@ polo () {
     cd "$saved" || exit
 }
 ```
+3. 
+```bash
+ #!/usr/bin/env bash
+
+try_count=0
+truncate -s 0 ./rarely-fail.log
+while :
+do
+   ((try_count++))
+   ./rarely-fail.sh &>> ./rarely-fail.log
+   if [[ "$?" -ne  "0" ]]; then
+      break
+   fi
+done
+echo "Failed at ${try_count}th try."
+```
+4. `$ find . -name *.html | xargs -d "\n" zip htmls.zip`
+5. `$ find . -type f | xargs -d "\n" ls -l --sort=time`
