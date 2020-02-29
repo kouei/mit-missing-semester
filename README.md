@@ -3,6 +3,6 @@
 
 | # | Title |
 | - | ----- |
-|1|[Course overview + the shell](01.Course-overview-plus-the-shell)|
-|2|[Shell Tools and Scripting](02.Shell-Tools-and-Scripting)|
-|3|Editors (Vim) (Omitted)|
+|01|[Course overview + the shell](01.Course-overview-plus-the-shell)|
+|02|[Shell Tools and Scripting](02.Shell-Tools-and-Scripting)|
+|03|[Editors (Vim)](03.Editors-Vim)|
