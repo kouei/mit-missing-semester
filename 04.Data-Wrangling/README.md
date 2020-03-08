@@ -7,7 +7,7 @@
 6. `$ xargs [COMMAND]` will take its input and send to COMMAND as its arguments.
 
 # Exercise
-1. Additional Problem 1: <kbd>^(\d+,)*-?\d+(\.\d+)?(e\d+)?$<\kbd>
+1. Additional Problem 1: <kbd>^(\d+,)*-?\d+(\.\d+)?(e\d+)?$</kbd>
    Additional Problem 2: `(1 )?\(?(\d{3})\)?[-\d\s]*`  
    Additional Problem 3: `([^\+]+)(\+.*)?@.*`  
    Additional Problem 4: `<([a-z]+)( [^>]*)?>.*</\1>`  
