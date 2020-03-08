@@ -8,7 +8,7 @@
 
 # Exercise
 1. 
-Additional Problem 1: <kbd>^(\d+,)*-?\d+(\.\d+)?(e\d+)?$</kbd>  
+Additional Problem 1: <kbd>`^(\d+,)*-?\d+(\.\d+)?(e\d+)?$`</kbd>  
 Additional Problem 2: <kbd>(1 )?\\(?(\d{3})\\)?[-\\d\\s]*</kbd>  
 Additional Problem 3: <kbd>([^\+]+)(\+.*)?@.*</kbd>  
 Additional Problem 4: <kbd><([a-z]+)( [^>]*)?>.*</\1></kbd>  
