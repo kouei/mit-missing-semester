@@ -33,15 +33,14 @@ Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`
   
   
 **which combinations do not occur?**  
-`cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" | grep -E "^([^a]*a){3}.*$" | grep -Ev "'s$" | sed -E "s/.*([a-z]{2})$/\1/" | sort | uniq > a`  
+`$ cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" | grep -E "^([^a]*a){3}.*$" | grep -Ev "'s$" | sed -E "s/.*([a-z]{2})$/\1/" | sort | uniq > a`  
   
-`echo {a..z}{a..z} | sed -E "s/ /\n/g" > b`  
+`$ echo {a..z}{a..z} | sed -E "s/ /\n/g" > b`  
   
-`diff a b`  
+`$ diff a b`  
 
 
 3. Use `sed -i FILE` to make the substitution inplace.
-
 4. Omitted
 5. Omitted
 6. Omitted
