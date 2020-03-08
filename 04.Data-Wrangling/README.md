@@ -18,7 +18,9 @@ Additional Problem 7: `at .*\.([^\(]+)\((.*):(\d+)\)`
 Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`  
 
 2.  
-`$ cat /usr/share/dict/words \`  
-`| grep -E "^([^a]*a){3}.*$" \`  
-`| grep -Ev "'s$" \`  
-`| wc -l`  
+```bash
+cat /usr/share/dict/words \ 
+| grep -E "^([^a]*a){3}.*$" \
+| grep -Ev "'s$" \
+| wc -l
+```
