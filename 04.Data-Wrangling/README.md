@@ -8,8 +8,17 @@
 
 # Exercise
 1. 
-Additional Problem 1: <kbd>`^(\d+,)*-?\d+(\.\d+)?(e\d+)?$`</kbd>  
-Additional Problem 2: <kbd>`(1 )?\(?(\d{3})\)?[-\d\s]*`</kbd>  
-Additional Problem 3: <kbd>`([^\+]+)(\+.*)?@.*`</kbd>  
-Additional Problem 4: <kbd>`<([a-z]+)( [^>]*)?>.*</\1>`</kbd>  
-Additional Problem 5: <kbd>`(.*)\.(jpg|png|gif)$`</kbd>  
+Additional Problem 1: `^(\d+,)*-?\d+(\.\d+)?(e\d+)?$`  
+Additional Problem 2: `(1 )?\(?(\d{3})\)?[-\d\s]*`  
+Additional Problem 3: `([^\+]+)(\+.*)?@.*`  
+Additional Problem 4: `<([a-z]+)( [^>]*)?>.*</\1>`  
+Additional Problem 5: `(.*)\.(jpg|png|gif)$`  
+Additional Problem 6: `^\s*([^\s].*)$`  
+Additional Problem 7: `at .*\.([^\(]+)\((.*):(\d+)\)`  
+Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`  
+
+2.  
+`$ cat /usr/share/dict/words \`
+`| grep -E "^([^a]*a){3}.*$" \`
+`| grep -Ev "'s$" \`
+`| wc -l`
