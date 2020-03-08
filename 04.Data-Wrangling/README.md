@@ -3,8 +3,9 @@
 2. [RegexOne](https://regexone.com) is a good place to practice regular expressions.  
 3. Use `$ wc -l` to count number of lines in a file.
 4. Use `uniq` to remove adjacent duplicated lines from a file. That means you need to call `sort` first.
-5. Use `$ paste -sd,` to combine multiple lines into a single line which is separated by ","
-6. `$ xargs [COMMAND]` will take its input and send to COMMAND as its arguments.
+5. Use `cat FILE | tr "[:upper:]" "[:lower:]"` to transform all characters in FILE to lowercase.  
+6. Use `$ paste -sd,` to combine multiple lines into a single line which is separated by ","
+7. `$ xargs [COMMAND]` will take its input and send to COMMAND as its arguments.
 
 # Exercise
 1. 
@@ -18,9 +19,11 @@ Additional Problem 7: `at .*\.([^\(]+)\((.*):(\d+)\)`
 Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`  
 
 2.  
-```bash
-cat /usr/share/dict/words \ 
-| grep -E "^([^a]*a){3}.*$" \
-| grep -Ev "'s$" \
-| wc -l
-```
+**Find the number of words (in /usr/share/dict/words) that contain at least three as and don’t have a 's ending.**  
+  
+`cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" | grep -E "^([^a]*a){3}.*$" | grep -Ev "'s$" | wc -l`  
+  
+  
+**What are the three most common last two letters of those words?**  
+`cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" | grep -E "^([^a]*a){3}.*$" | grep -Ev "'s$" | sed -E "s/.*([a-z]{2})$/\1/" | sort | uniq -c | sort -nrk1,1 | head -n3`  
+
