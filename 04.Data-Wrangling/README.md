@@ -2,8 +2,9 @@
 1. [regular expressions 101](https://regex101.com/) is a helpful website to help you understand the meaning of a specific expression  
 2. [RegexOne](https://regexone.com) is a good place to practice regular expressions.  
 3. Use `$ wc -l` to count number of lines in a file.
-4. Use `uniq` to remove adjacent duplicated lines from a file. That means you need to call `sort` first.
-5. Use `cat FILE | tr "[:upper:]" "[:lower:]"` to transform all characters in FILE to lowercase.  
+4. Use `$ sort [FILE] | uniq` to sort and remove adjacent duplicated lines from a file.  
+Note that in order to make the uniq work correctly, the `sort` must be called first.  
+5. Use `$ cat FILE | tr "[:upper:]" "[:lower:]"` to transform all characters in FILE to lowercase.  
 6. Use `$ paste -sd,` to combine multiple lines into a single line which is separated by ","
 7. `$ xargs [COMMAND]` will take its input and send to COMMAND as its arguments.
 
