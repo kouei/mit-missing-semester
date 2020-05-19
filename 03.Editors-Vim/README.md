@@ -1,4 +1,4 @@
-# Note
+# Notes
 1. Use `:help {character}` to look up help info for {character},  
 Example:  
 `:help r` will tell you how to use **r** in normal mode.
@@ -10,13 +10,7 @@ If you see **+clipboard** or **+xterm_clipboard**, you are good to go. If it's *
 Enter **"p+** in normal mode to paste from system clipboard to vim.
 3. Check the `.vimrc` file in this folder, it may be a good substitution for your default `.vimrc`.
 4.  See other useful tips in [course notes](https://missing.csail.mit.edu/2020/editors/).
-# Exercise
-1. Done.
-2. Done.
-3. Done.
-4. Done.
-5. Done.
-6. Done.
-7. Done.
-8. Done.
+
+# Exercises
+Omitted
 

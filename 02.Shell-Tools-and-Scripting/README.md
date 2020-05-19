@@ -1,4 +1,4 @@
-# Note
+# Notes
 1. Always add shebang to script: **#!/bin/bash**
 2. Use **shellcheck** command to check the sanity of a shell script.
 3. Curly braces **{}** can be used to do auto expansion.  
@@ -11,9 +11,11 @@ the difference of the file entries in folder foo and folder bar.
 Example: `$ tldr tar` will give you examples of the **tar** command.
 6. **tree** will list files and folders in a tree shape graph.
 
-# Exercise
-1. `$ ls -alh --sort=time --color=always`
-2. 
+# Exercises
+## Exercise 1
+`$ ls -alh --sort=time --color=always`  
+
+## Exercise 2 
 ```bash
 #!/usr/bin/env bash
 saved=""
@@ -24,8 +26,9 @@ marco () {
 polo () {
     cd "$saved" || exit
 }
-```
-3. 
+```  
+
+## Exercise 3
 ```bash
  #!/usr/bin/env bash
 
@@ -40,6 +43,10 @@ do
    fi
 done
 echo "Failed at ${try_count}th try."
-```
-4. `$ find . -name *.html | xargs -d "\n" zip htmls.zip`
-5. `$ find . -type f | xargs -d "\n" ls -l --sort=time`
+```  
+
+## Exercise 4
+`$ find . -name *.html | xargs -d "\n" zip htmls.zip`  
+
+## Exercise 5
+`$ find . -type f | xargs -d "\n" ls -l --sort=time`  

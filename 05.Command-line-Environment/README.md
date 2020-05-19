@@ -1,4 +1,4 @@
-# Note
+# Notes
 1. Use `$ man 7 signal` to check the meaning of different signals.
 2. Use `$ jobs` to check the status of jobs.
 3. Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to suspend a program.  
@@ -15,14 +15,16 @@ so you can access `remote_server:8888` through `localhost:9999`.
 12. [sshfs](https://github.com/libfuse/sshfs) can mount a folder on a remote server locally, and then you can use a local editor.
 13. `$ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519` will generate an **ed25519 standard** ssh key with **100** key derivation function rounds. The generated key will be stored in file **~/.ssh/id_ed25519**
 
-# Exercise
+# Exercises
 ## Job control
-1. Use the following two commands:  
+### Exercise 1
 `$ pgrep -af "sleep 10000"`  
-`$ pkill -9 -f "sleep 10000"`
-2. Use the following two commands:  
+`$ pkill -9 -f "sleep 10000"`  
+
+### Exercise 2
 `$ sleep 60 &`  
 `$ wait $(pgrep -f "sleep 60"); ls`  
+
 The pidwait function:  
 ```bash
 pidwait () {
@@ -36,28 +38,21 @@ pidwait () {
         fi
     done
 }
-```
+```  
 
 ## Terminal multiplexer
-1. Omitted.
+Omitted.
 
 ## Aliases
-1. `$ alias dc=cd`
-2. Omitted. (In this case maybe a **bash function** is better than an **alias**)
+### Exercise 1
+`$ alias dc=cd`  
+
+### Exercise 2
+Omitted.  
+(In this case maybe a **bash function** is better than an **alias**)  
 
 ## Dotfiles
-1. Omitted.
-2. Omitted.
-3. Omitted.
-4. Omitted.
-5. Omitted.
-6. Omitted.
+Omitted.
 
 ## Remote Machines
-1. Omitted.
-2. Omitted.
-1. Omitted.
-2. Omitted.
-3. Omitted.
-4. Omitted.
-5. Omitted.
+Omitted.

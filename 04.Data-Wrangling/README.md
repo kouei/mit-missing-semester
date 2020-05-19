@@ -1,4 +1,4 @@
-# Note
+# Notes
 1. [regular expressions 101](https://regex101.com/) is a helpful website to help you understand the meaning of a specific expression  
 2. [RegexOne](https://regexone.com) is a good place to practice regular expressions.  
 3. Use `$ wc -l` to count number of lines in a file.
@@ -8,8 +8,8 @@ Note that in order to make the uniq work correctly, the `sort` must be called fi
 6. Use `$ paste -sd,` to combine multiple lines into a single line which is separated by ","
 7. `$ xargs [COMMAND]` will take its input and send to COMMAND as its arguments.
 
-# Exercise
-1. 
+# Exercises
+## Exercise 1
 Additional Problem 1: `^(\d+,)*-?\d+(\.\d+)?(e\d+)?$`  
 Additional Problem 2: `(1 )?\(?(\d{3})\)?[-\d\s]*`  
 Additional Problem 3: `([^\+]+)(\+.*)?@.*`  
@@ -19,7 +19,7 @@ Additional Problem 6: `^\s*([^\s].*)$`
 Additional Problem 7: `at .*\.([^\(]+)\((.*):(\d+)\)`  
 Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`  
 
-2.  
+## Exercise 2
 **Find the number of words (in /usr/share/dict/words) that contain at least three as and don’t have a 's ending.**  
   
 `$ cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" | grep -E "^([^a]*a){3}.*$" | grep -Ev "'s$" | wc -l`  
@@ -41,7 +41,14 @@ Additional Problem 8: `([^:/]*)://([^:/]*)(:(\d+))?/`
 `$ diff a b`  
 
 
-3. Use `sed -i FILE` to make the substitution inplace.
-4. Omitted
-5. Omitted
-6. Omitted
+## Exercise 3
+Use `sed -i FILE` to make the substitution inplace.  
+
+## Exercise 4
+Omitted  
+
+## Exercise 5
+Omitted  
+
+## Exercise 6
+Omitted  
