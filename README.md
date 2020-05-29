@@ -8,3 +8,4 @@
 |03|[Editors (Vim)](03.Editors-Vim)|
 |04|[04.Data Wrangling](04.Data-Wrangling)|
 |05|[05.Command-line Environment](05.Command-line-Environment)|
+|06|[06.Version Control (Git)](06.Version-Control-(Git))|
